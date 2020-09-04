@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://s.electerious.com/images/ackee-bitbar/icon.png" title="Ackee" alt="Ackee logo" width="128">
+<img src="https://s.electerious.com/images/ackee-bitbar/icon.png" title="ackee-bitbar" alt="ackee-bitbar logo" width="128">
 
 # ackee-bitbar
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-![The Ackee plugin in a menu bar](https://s.electerious.com/images/ackee-bitbar/readme.png)
+![ackee-bitbar in a menu bar](https://s.electerious.com/images/ackee-bitbar/readme.png)
 
 </div>
 
@@ -56,7 +56,7 @@ ln -s index.js ../BitBar/Plugins/Enabled/ackee-bitbar.5m.js
 
 ### The plugin shows `env: No such file or directory`
 
-BitBar [requires that the script contains a shebang](https://github.com/matryer/bitbar#tested-languages) that points to your node binary. `ackee-bitbar` defaults to `/usr/local/bin/node`. You might need to adjust the path at the top of the `index.js`.
+BitBar [requires that the script contains a shebang](https://github.com/matryer/bitbar#tested-languages) that points to your node binary. ackee-bitbar defaults to `/usr/local/bin/node`. You might need to adjust the path at the top of the `index.js`.
 
 ### Where can I get my Ackee token?
 
