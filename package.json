@@ -1,0 +1,36 @@
+{
+  "name": "ackee-bitbar",
+  "version": "0.1.0",
+  "private": true,
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Ackee stats in your macOS menu bar",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'index.js'"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/ackee-bitbar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/ackee-bitbar.git"
+  },
+  "dependencies": {
+    "bitbar": "^1.3.1",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@electerious/eslint-config": "^1.3.4",
+    "eslint": "^7.7.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-react-native": "^3.8.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "@electerious/eslint-config"
+  }
+}
