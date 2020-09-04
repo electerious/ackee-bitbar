@@ -22,10 +22,16 @@
 git clone https://github.com/electerious/ackee-bitbar.git
 ```
 
-### 2) Create a configuration
+### 2) Install the dependencies
 
 ```sh
 cd ackee-bitbar
+npm install
+```
+
+### 3) Create a configuration
+
+```sh
 vim .env
 ```
 
@@ -34,13 +40,13 @@ ACKEE_ENDPOINT=https://example.com/api
 ACKEE_TOKEN=5c5411b0-ef80-425b-8e80-e8c4a76fcad6
 ```
 
-### 3) Make it executable
+### 4) Make it executable
 
 ```sh
 chmod +x index.js
 ```
 
-### 4) Add the plugin to BitBar
+### 5) Add the plugin to BitBar
 
 ```sh
 ln -s index.js ../BitBar/Plugins/Enabled/ackee-bitbar.5m.js
