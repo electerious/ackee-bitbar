@@ -42,7 +42,7 @@ chmod +x index.js
 
 ### 4) Add the plugin to BitBar
 
-```
+```sh
 ln -s index.js ../BitBar/Plugins/Enabled/ackee-bitbar.5m.js
 ```
 
