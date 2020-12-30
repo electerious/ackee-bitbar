@@ -60,11 +60,7 @@ BitBar [requires that the script contains a shebang](https://github.com/matryer/
 
 ### Where can I get my Ackee token?
 
-There's currently no way to create a token in the interface of Ackee, but you can use the API to [generate a new token](https://github.com/electerious/Ackee/blob/master/docs/API.md#creating-a-token).
-
-### How long is the token valid?
-
-The generated token is only valid for a limited time. Adjust the [TTL](https://github.com/electerious/Ackee/blob/master/docs/Options.md#ttl) option of your Ackee instance to stay signed in.
+You can create a new permanent token in the settings of Ackee. Make sure to keep the token in a secure place.
 
 ### Is is possible to adjust the refresh interval?
 
