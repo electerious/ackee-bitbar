@@ -36,7 +36,7 @@ vim .env
 ```
 
 ```
-ACKEE_ENDPOINT=https://example.com/api
+ACKEE_ENDPOINT=https://ackee.example.com/api
 ACKEE_TOKEN=5c5411b0-ef80-425b-8e80-e8c4a76fcad6
 ```
 
