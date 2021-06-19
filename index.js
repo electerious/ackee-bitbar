@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
 const bitbar = require('bitbar')
 
 require('dotenv').config({
-	path: path.resolve(__dirname, '.env')
+	path: path.resolve(__dirname, '.env'),
 })
 
 const endpoint = process.env.ACKEE_ENDPOINT
@@ -19,7 +19,7 @@ const timeZone = new Intl.DateTimeFormat().resolvedOptions().timeZone
 		headers: {
 			'Authorization': `Bearer ${ token }`,
 			'Content-Type': 'application/json',
-			'Time-Zone': timeZone
+			'Time-Zone': timeZone,
 		},
 		body: JSON.stringify({
 			query: `
@@ -36,8 +36,8 @@ const timeZone = new Intl.DateTimeFormat().resolvedOptions().timeZone
 						}
 					}
 				}
-			`
-		})
+			`,
+		}),
 	})
 
 	if (response.ok === false) {
@@ -57,25 +57,25 @@ const timeZone = new Intl.DateTimeFormat().resolvedOptions().timeZone
 			text: domain.title,
 			submenu: [
 				{
-					text: `${ domain.facts.viewsToday } views`
+					text: `${ domain.facts.viewsToday } views`,
 				},
 				{
-					text: `${ domain.facts.activeVisitors } active visitors`
-				}
-			]
+					text: `${ domain.facts.activeVisitors } active visitors`,
+				},
+			],
 		}
 	})
 
 	return bitbar([
 		{
 			text: `${ json.data.facts.viewsToday } views`,
-			dropdown: false
+			dropdown: false,
 		},
 		bitbar.separator,
 		{
-			text: `${ json.data.facts.activeVisitors } active visitors`
+			text: `${ json.data.facts.activeVisitors } active visitors`,
 		},
 		bitbar.separator,
-		...domains
+		...domains,
 	])
 })()
