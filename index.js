@@ -2,7 +2,6 @@
 'use strict'
 
 const path = require('path')
-const fetch = require('node-fetch')
 const bitbar = require('bitbar')
 
 require('dotenv').config({

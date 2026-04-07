@@ -1,6 +1,6 @@
 {
   "name": "ackee-bitbar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "authors": [
     "Tobias Reich <tobias@electerious.com>"
@@ -19,8 +19,7 @@
   },
   "dependencies": {
     "bitbar": "^1.3.2",
-    "dotenv": "^10.0.0",
-    "node-fetch": "^2.6.1"
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@electerious/eslint-config": "^3.5.0"
