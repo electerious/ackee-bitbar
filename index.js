@@ -12,8 +12,13 @@ const endpoint = process.env.ACKEE_ENDPOINT
 const token = process.env.ACKEE_TOKEN
 const timeZone = new Intl.DateTimeFormat().resolvedOptions().timeZone
 
+const endpointUrl = new URL(endpoint)
+if (endpointUrl.protocol !== 'https:' && endpointUrl.protocol !== 'http:') {
+	throw new Error('ACKEE_ENDPOINT must use http or https protocol')
+}
+
 ;(async () => {
-	const response = await fetch(endpoint, {
+	const response = await fetch(endpointUrl.href, {
 		method: 'post',
 		headers: {
 			'Authorization': `Bearer ${ token }`,
